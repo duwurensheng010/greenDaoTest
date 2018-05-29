@@ -1,0 +1,1 @@
+package msmk.kindergarten.com.greendaotest;import javax.inject.Singleton;import dagger.Component;/** * Created by a5yearge on 2018/5/24. */@Singleton@Component(modules = {GreenDaoModule.class})public interface AppComponent {    GreenDaoApp getApplication();    BasePresenter inject(BasePresenter basePresenter);}

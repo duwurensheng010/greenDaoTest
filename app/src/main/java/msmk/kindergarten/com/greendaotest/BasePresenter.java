@@ -1,0 +1,1 @@
+package msmk.kindergarten.com.greendaotest;import javax.inject.Inject;/** * Created by a5yearge on 2018/5/24. */public class BasePresenter {    @Inject    DaoSession daoSession;    public BasePresenter(GreenDaoApp greenDaoApp){        if(greenDaoApp.getAppComponent()!=null){            greenDaoApp.getAppComponent().inject(this);        }    }}
